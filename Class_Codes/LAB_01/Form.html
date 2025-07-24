@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+
+       <!------------------------- FORM ------------------------->
+
+
+      <tr>
+        <td>Name</td>
+        <td><input type="text" name="name" placeholder="Enter your name" /></td>
+
+
+      </tr>
+
+      <tr>
+        <td>Email</td>
+        <td>
+          <input type="email" name="email" placeholder="Enter your email" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Password</td>
+        <td>
+          <input type="password" name="password" placeholder="Enter password" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>Gender</td>
+
+        <td>
+          <!---------------------------------------- Radio Buttons ---------------------------------------->
+
+          <input type="radio" name="gender" value="male" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="female">Female</label>
+
+        </td>
+
+
+      </tr>
+
+
+
+      <tr>
+        <td>Country</td>
+
+        <td>
+
+          <!----------------------------------- Dropdown ----------------------------------->
+          <select>
+            <option disabled selected hidden>Select Country</option>
+            <option>Bangladesh</option>
+            <option>Pakistan</option>
+            <option>Iran</option>
+          </select>
+
+
+          <!-- 
+            <select> creates a drop-down list.
+            <option> Elements:
+            - Each <option> represents a choice in the list.
+            - The value attribute defines what value is sent upon form submission for that option.
+
+            Attributes:
+            - **disabled**: Prevents selection of the default option ("Select Country").
+            - **selected**: Sets the default option shown when the page loads.
+            - **hidden**: Hides the option from the dropdown list to prevent selection.
+          -->
+
+        </td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td>
+          <textarea name="address" placeholder="Enter your address" rows="3" cols="30"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Fruit</td>
+
+        <td>
+          <input type="checkbox" id="mango" name="fruit" value="mango" /> <label for="mango">Mango</label>
+          <input type="checkbox" id="banana" name="fruit" value="banana" /> <label for="banana">Banana</label><br />
+
+        </td>
+
+      </tr>
+
+
+      <tr>
+        <td colspan="2" align="center"> <button>SignUp</button> </td>
+      </tr>
+
+
+    </table>
+
+  <!------------------------- Extra ------------------------->
+
+  <!------------------------- END ------------------------->
+
+    </table>
+</body>
+</html>
