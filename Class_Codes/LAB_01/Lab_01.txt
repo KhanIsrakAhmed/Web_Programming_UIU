@@ -1,0 +1,28 @@
+Week 1 – HTML Topics Covered
+
+1️⃣ Text Formatting & Styling
+ Bold Text – <b>...</b>
+ Italic Text – <i>...</i>
+ Underline Text – <u>...</u>
+ Font Color – <font color="color">...</font> (Deprecated)
+ Line Breaks – <br>
+ Horizontal Rule – <hr>
+ Headings (H1–H6) – <h1>...</h1> to <h6>...</h6>
+
+2️⃣ Tables in HTML
+ Basic Table Structure – <table>...</table>
+ Table Header – <th>...</th>
+ Table Rows & Data – <tr>...</tr> and <td>...</td>
+ Table Borders – border="1"
+ Cell Merging – rowspan & colspan
+
+3️⃣ HTML Forms
+ Basic Form Structure – <form>...</form>
+ Text Input Fields – <input type="text">
+ Email Input – <input type="email">
+ Password Input – <input type="password">
+ Radio Buttons – <input type="radio">
+ Checkboxes – <input type="checkbox">
+ Dropdown (Select Box) – <select><option>...</option></select>
+ Buttons – <button>Submit</button>
+ Form Submission – <input type="submit">
