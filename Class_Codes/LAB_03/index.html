@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;  /* Horizontal center */
+            align-items: center;      /* Vertical center */
+            background-image: url(image/bg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        table {
+            padding: 40px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background: rgba(221, 190, 190, 0.5); /* 0.5 = 50% transparent */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        td {
+            padding: 10px;
+        }
+      
+        button {
+            background: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td> Name: </td>
+                <td><input type="text" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input type="password" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password: </td>
+                <td> <input type="password" placeholder="Re-enter your password"> </td>
+            </tr>
+            <tr>
+            <td>Gender: </td>
+                <td>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Country: </td>
+                <td>
+                   <select>
+                    <option disabled selected hidden>Select country</option>
+                    <option>Bangladesh</option>
+                    <option>Germany</option>
+                    <option>Australia</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Address: </td>
+                <td><textarea placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button>Sign-Up</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
