@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UIU Housing Society</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo-title nav-left">
+        <img class="logo" src="img\logo.png" alt="UIU Housing Society Logo" />
+        <h3 class="title">UIU Housing Society</h3>
+      </div>
+
+      <div class="nav-right">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <select class="border-none" aria-label="Property">
+          <option value="" hidden selected disabled>PROPERTY</option>
+          <option value="PROPERTY1">PROPERTY1</option>
+          <option value="PROPERTY2">PROPERTY2</option>
+          <option value="PROPERTY3">PROPERTY3</option>
+        </select>
+        <select class="border-none" aria-label="Pages">
+          <option value="" hidden selected disabled>PAGES</option>
+          <option value="Pages1">Pages1</option>
+          <option value="Pages2">Pages2</option>
+          <option value="Pages3">Pages3</option>
+        </select>
+        <a href="#">CONTACT</a>
+        <button>Visit Ucam</button>
+      </div>
+    </nav>
+
+    <!-- Main Body -->
+    <section class="main-body">
+      <!-- Left Side -->
+      <div class="left">
+        <h1>
+          Find A Perfect Flat <br />
+          for Teachers and Students
+        </h1>
+        <p>
+          Amazing flats for teachers and students built with care. To buy these
+          flats, please contact the UIU Office.
+        </p>
+        <button class="green-color explore-uiu">Explore UIU</button>
+      </div>
+
+      <!-- Right Side -->
+      <div class="right">
+        <div class="slide-btns">
+          <button class="prev slider green-color" aria-label="Previous">
+            &#x276E;
+          </button>
+          <button class="next slider green-color" aria-label="Next">
+            &#x276F;
+          </button>
+        </div>
+        <img
+          class="right-img"
+          src="img\side.jpg"
+          alt="UIU Housing Flat Preview"
+        />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer green-color">
+      <form class="footer-form">
+        <input
+          class="search-key"
+          type="search"
+          placeholder="Search Keyword"
+          aria-label="Search Keyword"
+        />
+        <select class="PROPERTY-Type" aria-label="Property Type">
+          <option value="" hidden selected disabled>PROPERTY Type</option>
+          <option value="PROPERTY1">PROPERTY1</option>
+          <option value="PROPERTY2">PROPERTY2</option>
+          <option value="PROPERTY3">PROPERTY3</option>
+        </select>
+        <select class="Location" aria-label="Location">
+          <option value="" hidden selected disabled>Location</option>
+          <option value="Dhaka">DHAKA</option>
+          <option value="Chottogram">CHOTTOGRAM</option>
+          <option value="Khulna">KHULNA</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </footer>
+  </body>
+</html>
