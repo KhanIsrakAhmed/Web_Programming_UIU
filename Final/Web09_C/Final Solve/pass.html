@@ -58,6 +58,7 @@
         if (attempts>8 && !strongReached) {
           document.getElementById("tips").textContent =
             "Need Practice!!!!!" + "Tips: Use at least 6 characters, mix uppercase and lowercase letters, include numbers and special characters.";
+            attempts = 0;
         } else {
           document.getElementById("tips").textContent = "";
 
