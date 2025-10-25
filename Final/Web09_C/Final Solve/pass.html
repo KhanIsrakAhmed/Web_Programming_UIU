@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password strength</title>
+  </head>
+  <body>
+    password: <input type="text" id="pass" /><br />
+    <button onclick="checkPass();">Check Strength</button><br />
+    Your password strength is: <label id="strengthShow"></label>
+    <p id="attempts"></p>
+    <p id="tips"></p
+  </body>
+  <script>
+    let strongReached = false;
+    let attempts = 0;
+
+    function checkPass() {
+      let pass = document.getElementById("pass").value;
+      let score = 0;
+      if (pass.length >= 6) {
+        score += Math.floor(pass.length / 2) * 10;
+      }
+      if (/[A-Z]/.test(pass)) {
+        score += 15;
+      }
+      if (/[a-z]/.test(pass)) {
+        score += 15;
+      }
+      if (/[0-9]/.test(pass)) {
+        score += 20;
+      }
+      if (/[!@#$%^&*]/.test(pass)) {
+        score += 25;
+      }
+      let strength = "";
+      if (score <= 30) {
+        strength = "Very Weak";
+      } else if (score > 30 && score <= 50) {
+        strength = "Weak";
+      } else if (score > 50 && score <= 70) {
+        strength = "Medium";
+      } else if (score > 70 && score <= 90) {
+        strength = "Strong";
+        strongReached = true;
+      } else {
+        strength = "Very Strong";
+        strongReached = true;
+      }
+      if (score > +100) {
+        strength = "Perfect Dude";
+        strongReached = true;
+      }
+      attempts++;
+        document.getElementById("strengthShow").textContent = strength + " (" + score + ")";
+        document.getElementById("attempts").textContent = "Attempts: " + attempts;
+        if (attempts>8 && !strongReached) {
+          document.getElementById("tips").textContent =
+            "Need Practice!!!!!" + "Tips: Use at least 6 characters, mix uppercase and lowercase letters, include numbers and special characters.";
+        } else {
+          document.getElementById("tips").textContent = "";
+
+        }
+    }
+  </script>
+</html>
